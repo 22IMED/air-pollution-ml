@@ -56,7 +56,7 @@ def main(csv_path: str) -> None:
     print("[5/5] Entraînement du modèle principal (RandomForestRegressor) …")
     model = RandomForestRegressor(n_estimators=100, random_state=42, n_jobs=-1)
     model.fit(X_scaled, y)
-    joblib.dump(model, "model.joblib")
+    joblib.dump(model, "model_2.joblib'.joblib")
     print("      → model.joblib sauvegardé")
 
     print("\n✅ Les 4 artefacts sont prêts :")

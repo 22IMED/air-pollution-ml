@@ -11,7 +11,7 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 # ── Chargement des artefacts ──────────────────────────────────────────────────
-model  = joblib.load("model.joblib")
+model  = joblib.load("model_2.joblib")
 scaler = joblib.load("scaler.joblib")
 imputer = joblib.load("imputer.joblib")
 
@@ -78,6 +78,6 @@ plt.ylabel("Variation de la RMSE (%)")
 plt.legend()
 plt.grid(True, alpha=0.4)
 plt.tight_layout()
-plt.savefig("noise_sensitivity_curve.png", dpi=150)
+plt.savefig("noise_sensitivity_curve_model_2.png", dpi=150)
 plt.show()
 print("Courbe sauvegardée : noise_sensitivity_curve.png")
